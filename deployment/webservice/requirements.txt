@@ -1,9 +1,0 @@
-mlflow
-jupyter
-flask
-scikit-learn
-pandas
-seaborn
-numpy
-matplotlib
-xgboost
