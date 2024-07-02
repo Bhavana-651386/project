@@ -22,6 +22,6 @@ details = {'age':45,
           'gender_Male':1,
           'gender_Other':0,}
 
-url = 'http://localhost:5000/api'
+url = 'http://localhost:5000/predict'
 
 r = requests.post(url,json=details)
