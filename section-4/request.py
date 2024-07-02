@@ -1,10 +1,10 @@
 import requests
 url = 'http://localhost:5000/api'
 
-r = requests.post(url,json={'age':0,
+r = requests.post(url,json={'age':45,
                             'hypertension':0,
                             'heart_disease':1,
-                            'avg_glucose_level',
+                            'avg_glucose_level':0,
                             'bmi':0,
                             'Residence_type_Rural':0,
                             'Residence_type_Urban':1,
@@ -22,5 +22,3 @@ r = requests.post(url,json={'age':0,
                             'gender_Female':0,
                             'gender_Male':1,
                             'gender_Other':0,})
-
-print(r.json())
