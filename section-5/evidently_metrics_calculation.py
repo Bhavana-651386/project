@@ -77,10 +77,10 @@ X_train,X_valid,y_train,y_valid = train_test_split(X,y,test_size = 0.2,random_st
 ## Train the model
 logreg = LogisticRegression()
 logreg.fit(X_train, y_train)
-
+X_train['prediction'] = y_train
 ## Predict the result
 y_pred = logreg.predict(X_valid)
-
+X_valid['prediction'] = y_pred
 begin = datetime.datetime(2024, 7, 2, 0, 0)
 
 
