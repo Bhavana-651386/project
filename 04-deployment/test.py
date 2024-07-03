@@ -20,8 +20,10 @@ details = {'age':45,
           'ever_married_Yes':1,
           'gender_Female':0,
           'gender_Male':1,
-          'gender_Other':0}
+          'gender_Other':0,}
 
 url = 'http://localhost:5000/predict'
 
+
 r = requests.post(url,json=details)
+print(r.text)

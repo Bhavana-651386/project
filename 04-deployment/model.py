@@ -59,5 +59,6 @@ accuracy = accuracy_score(y_valid, y_pred)
 pickle.dump(logreg, open('model.pkl','wb'))
 
 # Loading model to compare the results
-#model = pickle.load(open('model.pkl','rb'))
-#print(model.predict([['1.8']]))
+check = [45,0,1,0,0,0,1,0,0,1,0,0,0,0,0,1,0,1,0,1,0]
+model = pickle.load(open('model.pkl','rb'))
+print(model.predict([check]))
