@@ -1,7 +1,8 @@
 # An object of Flask class is our WSGI application.
-from flask import Flask, request, jsonify
+from flask import Flask, request
 import pickle
 import numpy as np
+import json
 
 # Flask constructor takes the name of 
 # current module (__name__) as argument.
@@ -36,12 +37,12 @@ def serve():
                                 data['gender_Female'],
                                 data['gender_Male'],
                                 data['gender_Other']]])
-    print(type(prediction[0]))
+    
+    #print(type(prediction[0]))
     print(prediction[0])
 
-    output = prediction[0].to_list()
-    #return jsonify(output)
-    return '123'
+    output = prediction[0]
+    return json.dumps(output, default=str)
 
 # main driver function
 if __name__ == '__main__':

@@ -1,3 +1,5 @@
+####### Old version of code ########
+'''
 # Import libraries
 import numpy as np
 from flask import Flask, request, jsonify
@@ -23,3 +25,4 @@ def predict():
 
 if __name__ == '__main__':
     app.run(port=5000, debug=True)
+'''
