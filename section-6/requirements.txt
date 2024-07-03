@@ -1,4 +1,6 @@
 jupyter
+pytest
+make
 scikit-learn
 pandas
 seaborn
