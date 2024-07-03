@@ -44,9 +44,6 @@ X = df.drop('stroke',axis=1)
 y = df['stroke']
 X_train,X_valid,y_train,y_valid = train_test_split(X,y,test_size = 0.2,random_state=42) 
 
-verify = X_valid.head(1)
-verify = verify.to_numpy()
-
 ## Train the model
 logreg = LogisticRegression()
 logreg.fit(X_train, y_train)
@@ -62,5 +59,5 @@ accuracy = accuracy_score(y_valid, y_pred)
 pickle.dump(logreg, open('model.pkl','wb'))
 
 # Loading model to compare the results
-model = pickle.load(open('model.pkl','rb'))
+#model = pickle.load(open('model.pkl','rb'))
 #print(model.predict([['1.8']]))
